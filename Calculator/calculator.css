@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+}
+
+.container{
+    border :1px solid red;
+    
+}
+
+.display{
+    border :1px solid yellow;
+    height: 8em;
+    text-align: right;
+}
+
+.display1{
+    /* border :1px solid blue; */
+    height: 3em;
+    font-size: 125%;
+}
+
+.display2{
+    /* border :1px solid green; */
+    /* height: 1.74em; */
+    font-size: 250%;
+    padding-top: 0.5em;
+}
+
+.input{
+    border :1px solid red;
+    padding-top: 3%;
+}
+
+.numbers{
+    /* border :1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+    width: 75%;
+    padding-right:2%;
+    padding-left:2%;
+    float: left;
+    
+}
+
+.num{
+    border: 1px solid pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+   
+}
+
+.operators{
+    /* border :1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+    padding-bottom: 1em;
+    
+}
+
+.oprtr, .ac, .del, .equal{
+    border :1px solid hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+}
+
+.num:hover, .oprtr:hover, .ac:hover, .del:hover, .equal:hover{
+    cursor: pointer;
+
+    /* transition: 0.32s; */
+}
+
+.num:active, .oprtr:active, .ac:active, .del:active, .equal:active{
+    background-color: rgb(221, 221, 12);
+    color: black;
+    background-color: white;
+}
